@@ -8,6 +8,6 @@ public class CharacterSO : ScriptableObject
 	public Animator animController;
 	public string characterName;
 	public int powerOfAttack, powerOfSpecial, powerDefense;
-	public Sprite characterIcon;
+	public Sprite characterIcon, characterBackgroundImage;
 
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5908908734884194644}
   - component: {fileID: 5908908734884194645}
   - component: {fileID: 4353736977518345575}
+  - component: {fileID: 7891052968429449089}
   m_Layer: 5
   m_Name: Character_1
   m_TagString: Untagged
@@ -119,4 +120,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5908908734884194645}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7891052968429449089}
+        m_TargetAssemblyTypeName: CharacterSelectionController, Assembly-CSharp
+        m_MethodName: ShowInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7891052968429449089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5908908734884194647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc3649e733e5074d9e6f295ab7d7c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterRef: {fileID: 0}
+  _characterAnim: {fileID: 0}
+  _characterName: {fileID: 0}
+  _powerOfAttack: {fileID: 0}
+  _powerOfSpecial: {fileID: 0}
+  _powerDefense: {fileID: 0}
+  _characterIcon: {fileID: 0}

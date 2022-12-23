@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 
 public class CharacterSelectionController : MonoBehaviour
 {
 	public CharacterSO characterRef;
 
 	[SerializeField] private Animator _characterAnim;
-	[SerializeField] private Text _characterName, _powerOfAttack, _powerOfSpecial, _powerDefense;
-	[SerializeField] private Image _characterIcon;
+	[SerializeField] private TextMeshProUGUI _characterName, _powerOfAttack, _powerOfSpecial, _powerDefense;
+	[SerializeField] private Image _characterIcon, _characterBackgroundImage;
 
 
 	void Awake()
@@ -25,12 +25,17 @@ public class CharacterSelectionController : MonoBehaviour
 	}
 	public void ShowInfo()
 	{
-		characterRef.animController = _characterAnim;
-		characterRef.characterName = _characterName.text;
+		if (characterRef.animController !=null)
+		{
+			characterRef.animController = _characterAnim;
+
+		}
+		_characterName.text = characterRef.characterName;
 		_powerOfAttack.text = characterRef.powerOfAttack.ToString();
 		_powerOfSpecial.text = characterRef.powerOfSpecial.ToString();
 		_powerDefense.text = characterRef.powerDefense.ToString();
-		characterRef.characterIcon = _characterIcon.sprite;
+		_characterIcon.sprite = characterRef.characterIcon;
+		_characterBackgroundImage.sprite = characterRef.characterBackgroundImage;
 	}
 
 }

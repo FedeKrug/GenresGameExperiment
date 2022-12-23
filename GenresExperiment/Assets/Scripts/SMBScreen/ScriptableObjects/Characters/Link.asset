@@ -12,3 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c161535b3ff022946ba81c2575f767bf, type: 3}
   m_Name: Link
   m_EditorClassIdentifier: 
+  animController: {fileID: 0}
+  characterName: Link
+  powerOfAttack: 50
+  powerOfSpecial: 80
+  powerDefense: 40
+  characterIcon: {fileID: 21300000, guid: de04d976d785c7d4face353512749446, type: 3}
+  characterBackgroundImage: {fileID: 21300000, guid: 272230d1808524045b16d58f5044a9ad, type: 3}
